@@ -1,11 +1,18 @@
 const Texto = document.querySelector(".texto");
 const Mensaje = document.querySelector(".mensaje");
+const NotFound = document.querySelector(".texto__not__found");
+const Instruction = document.querySelector(".texto__instructions");
+const Copy = document.querySelector(".copiar");
+
 
 function EncriptarText(){
     const TextoEncriptado = encriptar(Texto.value);
     Mensaje.value = TextoEncriptado;
     Mensaje.style.backgroundImage = "none";
+    NotFound.style = "visibility: hidden";
+    Instruction.style = "visibility: hidden";
     Texto.value = "";
+    Copy.style = "visibility: visible";
 }
 
 function encriptar(stringEncriptada){
@@ -22,7 +29,11 @@ function encriptar(stringEncriptada){
 
 function DesencriptarText(){
     const TextoEncriptado = desencriptar(Texto.value);
+    Copy.style = "visibility: visible";
     Mensaje.value = TextoEncriptado;
+    Mensaje.style.backgroundImage = "none";
+    NotFound.style = "visibility: hidden";
+    Instruction.style = "visibility: hidden";
     Texto.value = "";
 }
 
@@ -39,7 +50,12 @@ function desencriptar(stringDesencriptada){
 }
 
 function copiar(){
+    Copy.style = "return";
     Mensaje.select();
     navigator.clipboard.writeText(Mensaje.value);
     Mensaje.value = "";
+    Mensaje.style = "return";
+    NotFound.style = "return";
+    Instruction.style = "return";
+    Texto.focus();
 }

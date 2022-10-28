@@ -6,13 +6,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/TextArea-Texto.css">
+    <link rel="stylesheet" href="./css/TextAreaMensaje.css">
+    <link rel="stylesheet" href="./css/Buttons.css">
     <title>Encriptador</title>
 </head>
 
-<body>
+<body class="background__all">
     <header>
-        <img src="img/Vectorlogo original.png" alt="Logo de alura con la letra a">
+        <img src="img/Vectorlogo original.png" alt="Logo de alura con la letra a" class="logo__a">
     </header>
 
     <main>
@@ -26,6 +29,11 @@
 
                 <button class="encriptar" onclick="EncriptarText()">Encriptar</button>
                 <button class="desencriptar" onclick="DesencriptarText()">Desencriptar</button>
+                <p class="advertencia">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle-fill" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"/>
+                    </svg>Solo letras minúsculas y sin acentos
+                </p>
 
             </div>
 
@@ -33,8 +41,9 @@
         
         <section>
 
-            <textarea class="mensaje" cols="18" rows="8"
-            ></textarea>
+            <textarea class="mensaje" cols="18" rows="8"></textarea>
+            <p class="texto__not__found">Ningún mensaje fue encontrado</p>
+            <p class="texto__instructions">Ingresa el texto que desees encriptar o desencriptar.</p>
             <button class="copiar" onclick="copiar()">Copiar</button>
 
         </section>

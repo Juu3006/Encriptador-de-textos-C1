@@ -1,0 +1,61 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
+.encriptar {
+    background-color: #0A3871;
+    border-radius: 24px;
+    color: white;
+    height: 50px;
+    left: 200px;
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    top: 705px;
+    width: 300px;
+}
+
+.desencriptar {
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    border-color: #0A3871;
+    color: #0A3871;
+    height: 50px;
+    left: 510px;
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    top: 705px;
+    width: 300px;
+}
+
+.advertencia {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    gap: 8px;
+
+    position: absolute;
+    width: 280px;
+    height: 18px;
+    left: 210px;
+    top: 654px;
+    opacity: 70%;
+}
+
+.copiar {
+    visibility: hidden;
+    background-color: #ffffff;
+    border-radius: 24px;
+    border-color: #0A3871;
+    color: #0A3871;
+    height: 50px;
+    left: 1070px;
+    position: absolute;
+    text-align: center;
+    font-size: medium;
+    top: 705px;
+    width: 300px;
+}
