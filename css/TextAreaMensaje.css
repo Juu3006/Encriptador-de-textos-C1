@@ -36,7 +36,7 @@
     width: 345px;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     .mensaje {
         background-image: none;
         height: 195px;
@@ -60,7 +60,7 @@
 }
 
 
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 375px) {
     .mensaje {
         background-image: none;
         height: 195px;

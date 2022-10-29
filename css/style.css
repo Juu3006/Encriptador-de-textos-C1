@@ -6,7 +6,7 @@
     margin: 2rem 0 0 2rem;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
     .logo__a {
         margin: 1rem 0 0 1rem;
     }
