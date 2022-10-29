@@ -17,7 +17,7 @@
 }
 
 .desencriptar {
-    background-color: #D8DFE8;
+    background: none;
     border-radius: 24px;
     border-color: #0A3871;
     color: #0A3871;
@@ -52,10 +52,71 @@
     border-color: #0A3871;
     color: #0A3871;
     height: 50px;
-    left: 1070px;
+    left: 1012px;
     position: absolute;
     text-align: center;
     font-size: medium;
-    top: 705px;
-    width: 300px;
+    top: 715px;
+    width: 400px;
+}
+
+@media screen and (max-width: 769px) {
+    .encriptar {
+        height: 60px;
+        left: 15px;
+        top: 705px;
+        font-size: 1.5rem;
+        width: 360px;
+    }
+
+    .desencriptar {
+        height: 60px;
+        left: 390px;
+        top: 705px;
+        font-size: 1.5rem;
+        width: 360px;
+    }
+    .advertencia {
+        left: 15px;
+        top: 660px;
+    }
+
+    .copiar {
+        height: 60px;
+        left: 20px;
+        font-size: 1.5rem;
+        top: 935px;
+        width: 725px;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    .encriptar {
+        height: 55px;
+        left: 10px;
+        top: 650px;
+        font-size: 1.2rem;
+        width: 360px;
+    }
+
+    .desencriptar {
+        height: 55px;
+        left: 10px;
+        top: 715px;
+        font-size: 1.2rem;
+        width: 360px;
+    }
+    .advertencia {
+        left: 10px;
+        top: 605px;
+    }
+
+    .copiar {
+        height: 55px;
+        left: 15px;
+        font-size: 1.2rem;
+        top: 925px;
+        width: 345px;
+    }
 }

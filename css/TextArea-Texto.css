@@ -2,11 +2,30 @@
     background: none;
     border: none;
     color: #0A3871;
-    font-size: 1.485rem;
+    font-size: 1.585rem;
     font-family: cursive;
-    height: 480px;
-    left: 240px;
+    height: 440px;
+    left: 100px;
     position: absolute;
-    top: 168px;
-    width: 577px;
+    top: 160px;
+    width: 720px;
+}
+
+@media screen and (max-width: 769px) {
+    .texto {
+       height: 510px;
+       left: 30px;
+       top: 100px;
+       width: 710px;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    .texto {
+       height: 355px;
+       left: 15px;
+       top: 100px;
+       width: 355px;
+    }
 }

@@ -3,6 +3,8 @@
     background-position-y: 130px;
     background-color: #ffffff;
     border-radius: 32px;
+    border: none;
+    box-shadow: 0px 10px 26px -20px #000000;
     font-family: cursive;
     font-size: 1.485rem;
     height: 709px;
@@ -17,7 +19,6 @@
     font-size: 1.185rem;
     font-family: cursive;
     font-weight: bold;
-    height: 709px;
     left: 1050px;
     position: absolute;
     text-align: center;
@@ -28,10 +29,56 @@
 .texto__instructions {
     font-size: 1rem;
     font-family: cursive;
-    height: 709px;
     left: 1050px;
     position: absolute;
     text-align: center;
     top: 600px;
     width: 345px;
+}
+
+@media screen and (max-width: 769px) {
+    .mensaje {
+        background-image: none;
+        height: 195px;
+        left: 12px;
+        top: 800px;
+        width: 705px;
+    }
+
+    .texto__not__found {
+        font-size: 1.8rem;
+        left: 150px;
+        top: 820px;
+        width: 450px;
+    }
+    .texto__instructions {
+        font-size: 1.3rem;
+        left: 35px;
+        top: 900px;
+        width: 675px;
+    }
+}
+
+
+@media screen and (max-width: 376px) {
+    .mensaje {
+        background-image: none;
+        height: 195px;
+        left: 10px;
+        top: 785px;
+        width: 335px;
+    }
+
+    .texto__not__found {
+        font-size: 1.2rem;
+        left: 80px;
+        top: 800px;
+        width: 235px;
+    }
+    .texto__instructions {
+        font-size: .9rem;
+        left: 80px;
+        top: 885px;
+        width: 230px;
+    }
 }
