@@ -21,7 +21,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
     .texto {
        height: 355px;
        left: 15px;

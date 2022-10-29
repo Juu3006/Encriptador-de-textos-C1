@@ -95,7 +95,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
     .encriptar {
         height: 55px;
         left: 10px;

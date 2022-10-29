@@ -60,7 +60,7 @@
 }
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 475px) {
     .mensaje {
         background-image: none;
         height: 195px;
